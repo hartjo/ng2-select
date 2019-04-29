@@ -557,7 +557,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
     }, 0);
   }
 
-  private open(): void {
+  public open(): void {
     this.options = this.itemObjects
       .filter((option: SelectItem) => (this.multiple === false ||
         this.multiple === true && !this.active.find((o: SelectItem) => option.text === o.text)));
